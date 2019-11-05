@@ -2,40 +2,35 @@ import React, { Component, ReactNode, Fragment } from "react";
 
 import {Screen} from '../DashContainer/widgets/Screen'
 
+import { IScreen, ISpace } from "../../models/IScreen";
+import { ScreenCloud } from "../../ScreenCloudReactApp";
+import {Spaces} from "../DashContainer/widgets/Spaces"
+
 interface State {
-    
+    spaces: ISpace[],
+    currentSpace: string
 }
 
 interface IProps {
-
+    spaces: ISpace[]
 }
 
 
-
 export class DashboardContainer extends Component<IProps, State> {
-
-
-
 
     /*- - - - - - - - - - - - - -
      * CTOR
      - - - - - - - - - - - - - -*/
     constructor(props: IProps) {
         super(props);
-        this.state = {
-            
-        };
+        this.state= {
+            spaces:props.spaces,
+            currentSpace:props.spaces[1].name
+        }
+
+
+        console.log(this.state.spaces.length)
     }
-
-
-    /*- - - - - - - - - - - - - -
-     * COMPONENT MOUNTED
-     - - - - - - - - - - - - - -*/
-    async componentDidMount(): Promise<void> {
-        
-    }
-
-
 
     /*- - - - - - - - - - - - - -
      * RENDER
@@ -48,9 +43,13 @@ export class DashboardContainer extends Component<IProps, State> {
                 <div className="screens-header">
 
                     <div className="title-row">
+                        
                         <div className="title">
-                            <span>Floor 10</span>
+
+                            {this.state.currentSpace}
+
                         </div>
+
                         <div className="title active">
                             <span>Floor 12</span>
                         </div>
@@ -74,19 +73,11 @@ export class DashboardContainer extends Component<IProps, State> {
                 </div>
 
                 <div className="screens-container">
-                    
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
-                    <Screen />
+                    <Spaces 
+                        spaces ={this.state.spaces}
+                        currentSpace={this.state.currentSpace}
+                        />
+
                     
                 </div>
 
