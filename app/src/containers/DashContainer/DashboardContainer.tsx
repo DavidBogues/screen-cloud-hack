@@ -1,30 +1,35 @@
 import React, { Component, ReactNode, Fragment } from "react";
 
+<<<<<<< Updated upstream
 
+=======
+import {Screen} from '../DashContainer/widgets/Screen'
+import { IScreen, ISpace } from "../../models/IScreen";
+import { ScreenCloud } from "../../ScreenCloudReactApp";
+>>>>>>> Stashed changes
 
 interface State {
-    
+    spaces: ISpace[]
 }
 
 interface IProps {
-
+    spaces: ISpace[]
 }
 
 
 
 export class DashboardContainer extends Component<IProps, State> {
 
-
-
-
     /*- - - - - - - - - - - - - -
      * CTOR
      - - - - - - - - - - - - - -*/
     constructor(props: IProps) {
         super(props);
-        this.state = {
-            
-        };
+        this.state= {
+            spaces:props.spaces
+        }
+
+        console.log(this.state.spaces.length)
     }
 
 
@@ -102,6 +107,7 @@ export class DashboardContainer extends Component<IProps, State> {
                 </div>
 
                 <div className="screens-container">
+<<<<<<< Updated upstream
 
                     <div className="screen-wrapper">
                         <div className="screen">
@@ -177,6 +183,14 @@ export class DashboardContainer extends Component<IProps, State> {
                         </div>
                     </div>
 
+=======
+                    
+                    {this.state.spaces.map(element => {
+                        <button>TWST</button>
+                    })}
+                    
+                    
+>>>>>>> Stashed changes
                 </div>
 
 
