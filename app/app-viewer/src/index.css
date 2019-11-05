@@ -1,0 +1,123 @@
+/**
+  * NB
+  * - Only place global styles here. Styles for individual components should live in each component's folder.
+  * - normalize.css is first imported via NPM in index.ts
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* i.e. 1rem */
+}
+
+body {
+  font-family: Lato, "sans-serif", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.screens-header{
+  background-color:#282c34;
+}
+
+.screens-header{
+  display:inline-flex;
+}
+
+.screens-header .title{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 10px;
+  color:lightgrey;
+  text-transform:uppercase;
+}
+
+.screens-header .title.active{
+    color:white;
+    border-bottom:3px solid yellow;
+}
+
+.screens-header .status-holder{
+  position: absolute;  
+    right: 20px;
+    display: inline-flex;
+    font-size: 24px;
+    text-transform:uppercase;
+    font-weight: 700;
+    padding:20px;
+}
+
+.screens-header .status-holder .offline{
+  color:red;
+  padding-right: 30px;
+}
+
+.screens-header .status-holder .online{
+  color:green;
+}
+
+.screens-header{
+  width: 100%;
+}
+
+
+
+
+
+.screens-container{
+  display: flex;
+  flex-wrap: wrap;
+  border:1px solid lightgray;
+}
+
+.screen-wrapper
+{
+  width:25%;
+  display: inline-flex;
+}
+
+.screen{
+  width:100%;
+  border:1px black solid;
+  position: relative;
+  border:1px solid lightgray;
+}
+
+.screen.offline{
+  background-color: black;
+  border:3px solid pink;
+}
+
+.screen img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.screen-name{
+  background-color: black;
+  color:white;
+  padding: 5px 10px;
+  position: absolute;
+  top:10px;
+  left: 10px;
+  font-weight: 700;
+}
+
+.screen-status{
+  position: absolute;
+  right:10px;
+  bottom:10px;
+  color:green;
+}
