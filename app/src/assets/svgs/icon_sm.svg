@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="144px" viewBox="0 0 165 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon_sm</title>
+    <desc>Created with Sketch.</desc>
+    <g id="colour" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tickertape1" transform="translate(-45.000000, -44.000000)">
+            <g id="icon_sm" transform="translate(50.040541, 50.000000)">
+                <polygon id="Stroke-1" stroke="#293435" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" points="77.2143306 0 0.98177247 132 153.446889 132"></polygon>
+                <path d="M77.2143306,115.627907 C81.4530618,115.627907 84.8887492,112.191924 84.8887492,107.953679 C84.8887492,103.715053 81.4530618,100.27907 77.2143306,100.27907 C72.9759802,100.27907 69.539912,103.715053 69.539912,107.953679 C69.539912,112.191924 72.9759802,115.627907 77.2143306,115.627907" id="Fill-3" fill="#293435"></path>
+                <path d="M77.2143306,51.1627907 C72.9759802,51.1627907 69.539912,54.6077568 69.539912,58.8579355 L69.539912,86.4447719 C69.539912,90.6945688 72.9759802,94.1395349 77.2143306,94.1395349 C81.4530618,94.1395349 84.8887492,90.6945688 84.8887492,86.4447719 L84.8887492,58.8579355 C84.8887492,54.6077568 81.4530618,51.1627907 77.2143306,51.1627907" id="Fill-5" fill="#293435"></path>
+            </g>
+        </g>
+    </g>
+</svg>
