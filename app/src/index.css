@@ -117,7 +117,7 @@ code {
 }
 
 .screen-name{
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
   color:white;
   padding: 5px 10px;
   position: absolute;
@@ -133,8 +133,17 @@ code {
 
 .screen-status{
   position: absolute;
-  right:10px;
-  bottom:10px;
-  color:green;
+  /* right:10px;
+  bottom:10px; */
+  color:#FF5066;
   display: none;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+.offline .screen-status {
+  display: block;
 }
