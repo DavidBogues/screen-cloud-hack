@@ -39,7 +39,7 @@ const App: React.FC = () => {
         
         <div className="screen-wrapper">
           <div className="screen">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
@@ -51,7 +51,7 @@ const App: React.FC = () => {
 
         <div className="screen-wrapper">
           <div className="screen">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
@@ -65,7 +65,7 @@ const App: React.FC = () => {
 
         <div className="screen-wrapper">
           <div className="screen offline">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
@@ -77,7 +77,7 @@ const App: React.FC = () => {
 
         <div className="screen-wrapper">
           <div className="screen">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
@@ -89,7 +89,7 @@ const App: React.FC = () => {
 
         <div className="screen-wrapper">
           <div className="screen">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
@@ -101,7 +101,7 @@ const App: React.FC = () => {
 
         <div className="screen-wrapper">
           <div className="screen">
-            <img src="./assets/img/apple-bg.png" />
+            <img src="./assets/img/apple-bg.png" alt="Sample screen content" />
             <div className="screen-name">
               Screen Name
             </div>
