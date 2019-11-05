@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@screencloud/screencloud-apps-sdk": "^0.1.80",
+    "@screencloud/screencloud-ui-components": "^1.134.4",
+    "@screencloud/signage-sdk": "1.3.6",
+    "@sentry/browser": "^5.7.1",
     "micro": "9.3.3",
     "micro-cors": "0.1.1",
     "node-sass": "^4.12.0",
