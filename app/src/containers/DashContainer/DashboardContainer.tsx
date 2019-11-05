@@ -44,12 +44,12 @@ export class DashboardContainer extends Component<IProps, State> {
 
                     <div className="title-row">
                         
-                        <div className="title active">
-                            <span>Floor 10</span>
+                        <div className="title">
+                            <span>Floor 11</span>
                         </div>
 
-                        <div className="title">
-                            <span>{this.state.currentSpace}</span>
+                        <div className="title active">
+                            <span>Floor 12</span>
                         </div>
 
                         <div className="title">
