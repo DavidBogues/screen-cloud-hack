@@ -39,13 +39,14 @@ export class Screen extends Component<IProps, State> {
                 <div className="screen-wrapper">
 
                     <div className={this.state.screen.status === "online" ? "screen" : "screen offline"}>
-                        <img src={`./img/${this.state.screen.currentImage}`} />
+                        {this.state.screen.status === "online"  &&
+                            <img src={`./img/${this.state.screen.currentImage}`} />
+                        }
                         <div className="screen-name">
                             {this.state.screen.name}
                         </div>
                         <div className="screen-status">
                             {this.state.screen.status}
-
                         </div>
                     </div>
                 </div>
