@@ -1,13 +1,9 @@
 import React, { Component, ReactNode, Fragment } from "react";
 
-<<<<<<< Updated upstream
-
-=======
 import {Screen} from '../DashContainer/widgets/Screen'
 import { IScreen, ISpace } from "../../models/IScreen";
 import { ScreenCloud } from "../../ScreenCloudReactApp";
->>>>>>> Stashed changes
-
+import {Spaces} from "../DashContainer/widgets/Spaces"
 interface State {
     spaces: ISpace[]
 }
@@ -107,90 +103,9 @@ export class DashboardContainer extends Component<IProps, State> {
                 </div>
 
                 <div className="screens-container">
-<<<<<<< Updated upstream
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div className="screen-wrapper">
-                        <div className="screen offline">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-=======
                     
-                    {this.state.spaces.map(element => {
-                        <button>TWST</button>
-                    })}
+                    <Spaces spaces ={this.state.spaces} />
                     
-                    
->>>>>>> Stashed changes
                 </div>
 
 
