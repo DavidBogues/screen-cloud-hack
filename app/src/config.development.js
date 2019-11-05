@@ -19,7 +19,7 @@ export const config = {
                             "cheese.jpg",
                             "discount.png",
                             "offer.jpg",
-                            "stats.jpg",
+                            "stats.png",
                             "yoga.png"
                         ],
                         "last_updated": {
@@ -95,7 +95,7 @@ export const config = {
                             "cheese.jpg",
                             "discount.png",
                             "offer.jpg",
-                            "stats.jpg",
+                            "stats.png",
                             "yoga.png"
                         ],
                         "last_updated": {
@@ -203,7 +203,7 @@ export const config = {
                             "cheese.jpg",
                             "discount.png",
                             "offer.jpg",
-                            "stats.jpg",
+                            "stats.png",
                             "yoga.png"
                         ],
                         "last_updated": {
@@ -236,7 +236,7 @@ export const config = {
                             "cheese.jpg",
                             "discount.png",
                             "offer.jpg",
-                            "stats.jpg",
+                            "stats.png",
                             "yoga.png"
                         ],
                         "last_updated": {
