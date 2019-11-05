@@ -1,6 +1,6 @@
 import React, { Component, ReactNode, Fragment } from "react";
 
-
+import {Screen} from '../DashContainer/widgets/Screen'
 
 interface State {
     
@@ -32,36 +32,9 @@ export class DashboardContainer extends Component<IProps, State> {
      * COMPONENT MOUNTED
      - - - - - - - - - - - - - -*/
     async componentDidMount(): Promise<void> {
-        // await this.fetchData();
+        
     }
 
-
-    /*- - - - - - - - - - - - - -      
-     * FETCH REPORT DATA
-     - - - - - - - - - - - - - -*/
-    private fetchData(): void {
-        /*
-        const reportUrl = process.env.REACT_APP_API_BASE_URL + `/power-bi/v1/reports/${this.state.reportId}?credentialId=${this.state.credentialId}&reportType=${this.state.reportType}`;
-
-        request
-            .get(reportUrl)
-            .retry(2)
-            .timeout(20000)
-            .then((res: { body: IBiReport }) => {
-                this.setState({ report: res.body });
-                this.setState({ isLoading: false });
-            })
-            .catch(err => {
-
-                this.setState({ isLoading: false });
-
-                this.setState(() => {
-                    throw err;
-                });
-
-            });
-        */
-    }
 
 
     /*- - - - - - - - - - - - - -
@@ -71,7 +44,6 @@ export class DashboardContainer extends Component<IProps, State> {
 
         return (
             <Fragment>
-
 
                 <div className="screens-header">
 
@@ -102,81 +74,20 @@ export class DashboardContainer extends Component<IProps, State> {
                 </div>
 
                 <div className="screens-container">
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div className="screen-wrapper">
-                        <div className="screen offline">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="screen-wrapper">
-                        <div className="screen">
-                            <img src="./img/apple-bg.png" />
-                            <div className="screen-name">
-                                Screen Name
-                            </div>
-                            <div className="screen-status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-
+                    
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    <Screen />
+                    
                 </div>
 
 
