@@ -4,15 +4,17 @@ import { Space } from "./Space";
 
 interface Props {
   spaces: ISpace[];
+  currentSpace: string;
 }
 
 
-export const Spaces: FC<Props> = ({ spaces}) => {
+export const Spaces: FC<Props> = ({ spaces, currentSpace}) => {
   const items = spaces.map(
     space => (
       <Space 
         key={space.name}
-        space={space} />
+        space={space}
+        currentSpace={currentSpace} />
     )
   );
 

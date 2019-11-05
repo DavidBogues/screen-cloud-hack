@@ -18,8 +18,9 @@ export class Screen extends Component<IProps, State> {
      - - - - - - - - - - - - - -*/
     constructor(props: IProps) {
         super(props);
+        props.screen.currentImage=props.screen.playing[0];
         this.state = {
-            screen:props.screen
+            screen:props.screen,
         };
     }
 
@@ -32,8 +33,8 @@ export class Screen extends Component<IProps, State> {
         return (
             <Fragment>
                 <div className="screen-wrapper">
-                    <div className="screen">
-                        <img src="./img/apple-bg.png" />
+                    <div className={this.state.screen.status === "online" ? "screen" : "screen offline"}>
+                        <img src={`./img/${this.state.screen.currentImage}`} />
                         <div className="screen-name">
                             {this.state.screen.name}
                         </div>

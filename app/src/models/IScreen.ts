@@ -11,7 +11,8 @@ export interface IScreen{
     status:string,
     group:string,
     orientation:string,
-    playing: string[]
+    playing: string[],
+    currentImage:string
 }
 
 

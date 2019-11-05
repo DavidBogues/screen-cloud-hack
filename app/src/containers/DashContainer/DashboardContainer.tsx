@@ -4,14 +4,15 @@ import {Screen} from '../DashContainer/widgets/Screen'
 import { IScreen, ISpace } from "../../models/IScreen";
 import { ScreenCloud } from "../../ScreenCloudReactApp";
 import {Spaces} from "../DashContainer/widgets/Spaces"
+
 interface State {
-    spaces: ISpace[]
+    spaces: ISpace[],
+    currentSpace: string
 }
 
 interface IProps {
     spaces: ISpace[]
 }
-
 
 
 export class DashboardContainer extends Component<IProps, State> {
@@ -22,46 +23,11 @@ export class DashboardContainer extends Component<IProps, State> {
     constructor(props: IProps) {
         super(props);
         this.state= {
-            spaces:props.spaces
+            spaces:props.spaces,
+            currentSpace:props.spaces[1].name
         }
 
         console.log(this.state.spaces.length)
-    }
-
-
-    /*- - - - - - - - - - - - - -
-     * COMPONENT MOUNTED
-     - - - - - - - - - - - - - -*/
-    async componentDidMount(): Promise<void> {
-        // await this.fetchData();
-    }
-
-
-    /*- - - - - - - - - - - - - -      
-     * FETCH REPORT DATA
-     - - - - - - - - - - - - - -*/
-    private fetchData(): void {
-        /*
-        const reportUrl = process.env.REACT_APP_API_BASE_URL + `/power-bi/v1/reports/${this.state.reportId}?credentialId=${this.state.credentialId}&reportType=${this.state.reportType}`;
-
-        request
-            .get(reportUrl)
-            .retry(2)
-            .timeout(20000)
-            .then((res: { body: IBiReport }) => {
-                this.setState({ report: res.body });
-                this.setState({ isLoading: false });
-            })
-            .catch(err => {
-
-                this.setState({ isLoading: false });
-
-                this.setState(() => {
-                    throw err;
-                });
-
-            });
-        */
     }
 
 
@@ -77,9 +43,11 @@ export class DashboardContainer extends Component<IProps, State> {
                 <div className="screens-header">
 
                     <div className="title-row">
+                        
                         <div className="title">
-                            Floor 10
+                            {this.state.currentSpace}
                         </div>
+
                         <div className="title active">
                             Floor 12
                         </div>
@@ -104,7 +72,10 @@ export class DashboardContainer extends Component<IProps, State> {
 
                 <div className="screens-container">
                     
-                    <Spaces spaces ={this.state.spaces} />
+                    <Spaces 
+                        spaces ={this.state.spaces}
+                        currentSpace={this.state.currentSpace}
+                        />
                     
                 </div>
 
