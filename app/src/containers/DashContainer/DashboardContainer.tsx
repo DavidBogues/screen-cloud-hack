@@ -49,13 +49,13 @@ export class DashboardContainer extends Component<IProps, State> {
 
                     <div className="title-row">
                         <div className="title">
-                            Floor 10
+                            <span>Floor 10</span>
                         </div>
                         <div className="title active">
-                            Floor 12
+                            <span>Floor 12</span>
                         </div>
                         <div className="title">
-                            Floor 14
+                            <span>Floor 14</span>
                         </div>
                     </div>
 

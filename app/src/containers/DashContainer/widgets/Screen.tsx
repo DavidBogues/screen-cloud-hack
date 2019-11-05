@@ -35,7 +35,7 @@ export class Screen extends Component<IProps, State> {
             <Fragment>
                 <div className="screen-wrapper">
                     <div className="screen">
-                        <img src="./img/apple-bg.png" />
+                        <img src="./img/portrait.jpg" />
                         <div className="screen-name">
                             Screen Name
                                             </div>
