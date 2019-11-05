@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="442px" height="385px" viewBox="0 0 442 385" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon_lg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="colour" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landscape---centre" transform="translate(-492.000000, -889.000000)">
+            <g id="icon_lg" transform="translate(507.000000, 904.000000)">
+                <polygon id="Stroke-1" stroke="#F4F1F1" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" points="205.87585 0 0.454502026 355 411.297199 355"></polygon>
+                <path d="M205.87585,308.730337 C217.111519,308.730337 226.218547,299.622526 226.218547,288.388145 C226.218547,277.152755 217.111519,268.044944 205.87585,268.044944 C194.641191,268.044944 185.533154,277.152755 185.533154,288.388145 C185.533154,299.622526 194.641191,308.730337 205.87585,308.730337" id="Fill-3" fill="#F4F1F1"></path>
+                <path d="M205.87585,136.41573 C194.641191,136.41573 185.533154,145.688037 185.533154,157.127615 L185.533154,231.37903 C185.533154,242.817581 194.641191,252.089888 205.87585,252.089888 C217.111519,252.089888 226.218547,242.817581 226.218547,231.37903 L226.218547,157.127615 C226.218547,145.688037 217.111519,136.41573 205.87585,136.41573" id="Fill-5" fill="#F4F1F1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
