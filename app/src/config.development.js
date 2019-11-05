@@ -58,7 +58,7 @@ export const config = {
                         }
                     },
                     {
-                        "name": "Jon's Office",
+                        "name": "Lobby 1",
                         "status": "online",
                         "group": "Ungrouped",
                         "orientation": 0,
